@@ -8,6 +8,6 @@ for i in range(256):
     for j in range(256):
         ip = "172.16.%d.%d" % (i, j)
         digest = hashlib.sha512(ip).hexdigest()
-        if (digest == goal):
+        if digest == goal:
             print ip
             sys.exit(0)
